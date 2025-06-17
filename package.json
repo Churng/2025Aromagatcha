@@ -1,5 +1,5 @@
 {
-  "homepage": "https://churng.github.io/2025aromagotcha",
+  "homepage": "https://churng.github.io/2025Aromagatcha/",
   "name": "2025aromagotcha",
   "version": "0.1.0",
   "private": true,
@@ -25,6 +25,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.7.1",
+    "gh-pages": "^6.3.0",
     "prettier": "^2.4.1",
     "vue-template-compiler": "^2.6.14"
   },
