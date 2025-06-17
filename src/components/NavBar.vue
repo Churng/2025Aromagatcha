@@ -9,7 +9,7 @@
           type="button"
           class="btn btn-warning"
         >
-          學習本
+          70隻精油學習本
         </button>
       </router-link>
       <router-link to="/exam">

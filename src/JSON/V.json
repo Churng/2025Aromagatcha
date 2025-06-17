@@ -8,7 +8,17 @@
         "pattern": "蒸餾",
         "chemicalProperties": "單萜烯",
         "disease": "",
-        "note": ""
+        "note": "",
+        "toxicity": "",
+        "mucousIrritation": false,
+        "contactSensitivity": false,
+        "crossSensitivity": false,
+        "epilepsy": false,
+        "highBloodPressure": false,
+        "lowBloodPressure": false,
+        "homeopathyAvoid": false,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false
     },
     {
         "name": "大西洋雪松\n （阿特拉斯雪松）",
@@ -19,7 +29,18 @@
         "pattern": "蒸餾",
         "chemicalProperties": "倍半萜烯",
         "disease": "",
-        "note": "芳療界通常將之分為『倍半萜酮』類"
+        "note": "芳療界通常將之分為『倍半萜酮』類",
+        "toxicity": "",
+        "mucousIrritation": false,
+        "contactSensitivity": true,
+        "crossSensitivity": false,
+        "epilepsy": false,
+        "highBloodPressure": false,
+        "lowBloodPressure": false,
+        "homeopathyAvoid": false,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false,
+        "skinIrritation": false
     },
     {
         "name": "杜松漿果（杜松子油）",
@@ -30,7 +51,18 @@
         "pattern": "蒸餾",
         "chemicalProperties": "單萜烯",
         "disease": "",
-        "note": ""
+        "note": "",
+        "toxicity": "",
+        "mucousIrritation": false,
+        "contactSensitivity": true,
+        "crossSensitivity": false,
+        "epilepsy": false,
+        "highBloodPressure": false,
+        "lowBloodPressure": false,
+        "homeopathyAvoid": false,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false,
+        "skinIrritation": false
     },
     {
         "name": "絲柏（柏樹油）",
@@ -52,7 +84,18 @@
         "pattern": "蒸餾",
         "chemicalProperties": "單萜烯",
         "disease": "",
-        "note": "稀有物種"
+        "note": "稀有物種",
+        "toxicity": "",
+        "mucousIrritation": false,
+        "contactSensitivity": true,
+        "crossSensitivity": false,
+        "epilepsy": false,
+        "highBloodPressure": false,
+        "lowBloodPressure": false,
+        "homeopathyAvoid": false,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false,
+        "skinIrritation": false
     },
     {
         "name": "沒藥",
@@ -63,7 +106,18 @@
         "pattern": "蒸餾",
         "chemicalProperties": "倍半萜烯",
         "disease": "",
-        "note": ""
+        "note": "",
+        "toxicity": "",
+        "mucousIrritation": false,
+        "contactSensitivity": true,
+        "crossSensitivity": false,
+        "epilepsy": false,
+        "highBloodPressure": false,
+        "lowBloodPressure": false,
+        "homeopathyAvoid": false,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false,
+        "skinIrritation": false
     },
     {
         "name": "藍膠尤加利（藍桉尤加利）",
@@ -74,7 +128,18 @@
         "pattern": "蒸餾",
         "chemicalProperties": "氧化物",
         "disease": "",
-        "note": ""
+        "note": "",
+        "toxicity": "",
+        "mucousIrritation": false,
+        "contactSensitivity": false,
+        "crossSensitivity": false,
+        "epilepsy": true,
+        "highBloodPressure": true,
+        "lowBloodPressure": false,
+        "homeopathyAvoid": true,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false,
+        "skinIrritation": false
     },
     {
         "name": "寬葉（薄荷）尤加利",
@@ -85,7 +150,18 @@
         "pattern": "蒸餾",
         "chemicalProperties": "單萜酮",
         "disease": "",
-        "note": ""
+        "note": "",
+        "toxicity": "",
+        "mucousIrritation": false,
+        "contactSensitivity": false,
+        "crossSensitivity": false,
+        "epilepsy": true,
+        "highBloodPressure": true,
+        "lowBloodPressure": false,
+        "homeopathyAvoid": true,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false,
+        "skinIrritation": false
     },
     {
         "name": "史密斯尤加利",
@@ -96,7 +172,18 @@
         "pattern": "蒸餾",
         "chemicalProperties": "氧化物",
         "disease": "",
-        "note": ""
+        "note": "",
+        "toxicity": "",
+        "mucousIrritation": false,
+        "contactSensitivity": false,
+        "crossSensitivity": false,
+        "epilepsy": true,
+        "highBloodPressure": true,
+        "lowBloodPressure": false,
+        "homeopathyAvoid": true,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false,
+        "skinIrritation": false
     },
     {
         "name": "檸檬尤加利",
@@ -107,7 +194,18 @@
         "pattern": "蒸餾",
         "chemicalProperties": "醛",
         "disease": "",
-        "note": ""
+        "note": "",
+        "toxicity": "",
+        "mucousIrritation":true,
+        "contactSensitivity": false,
+        "crossSensitivity": false,
+        "epilepsy": false,
+        "highBloodPressure": true,
+        "lowBloodPressure": false,
+        "homeopathyAvoid": true,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false,
+        "skinIrritation": false
     },
     {
         "name": "茶樹",
@@ -118,7 +216,18 @@
         "pattern": "蒸餾",
         "chemicalProperties": "單萜醇",
         "disease": "",
-        "note": ""
+        "note": "",
+        "toxicity": "",
+        "mucousIrritation": false,
+        "contactSensitivity": true,
+        "crossSensitivity": false,
+        "epilepsy": false,
+        "highBloodPressure": false,
+        "lowBloodPressure": false,
+        "homeopathyAvoid": false,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false,
+        "skinIrritation": false
     },
     {
         "name": "白千層",
@@ -206,7 +315,18 @@
         "pattern": "蒸餾",
         "chemicalProperties": "酯",
         "disease": "",
-        "note": ""
+        "note": "",
+        "toxicity": "",
+        "mucousIrritation": false,
+        "contactSensitivity": false,
+        "crossSensitivity": false,
+        "epilepsy": false,
+        "highBloodPressure": false,
+        "lowBloodPressure": true,
+        "homeopathyAvoid": false,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false,
+        "skinIrritation": false
     },
     {
         "name": "醒目薰衣草",
@@ -217,7 +337,18 @@
         "pattern": "蒸餾",
         "chemicalProperties": "酯",
         "disease": "",
-        "note": ""
+        "note": "",
+        "toxicity": "",
+        "mucousIrritation": false,
+        "contactSensitivity": false,
+        "crossSensitivity": false,
+        "epilepsy": false,
+        "highBloodPressure": false,
+        "lowBloodPressure": true,
+        "homeopathyAvoid": false,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false,
+        "skinIrritation": false
     },
     {
         "name": "穗花薰衣草",
@@ -228,7 +359,19 @@
         "pattern": "蒸餾",
         "chemicalProperties": "氧化物",
         "disease": "",
-        "note": ""
+        "note": "",
+        "toxicity": "",
+        "mucousIrritation": false,
+        "contactSensitivity": false,
+        "crossSensitivity": false,
+        "epilepsy": false,
+        "highBloodPressure": true,
+        "lowBloodPressure": false,
+        "homeopathyAvoid": false,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false,
+        "skinIrritation": false
+        
     },
     {
         "name": "快樂鼠尾草",
@@ -239,7 +382,18 @@
         "pattern": "蒸餾",
         "chemicalProperties": "酯",
         "disease": "",
-        "note": ""
+        "note": "",
+        "toxicity": "",
+        "mucousIrritation": false,
+        "contactSensitivity": true,
+        "crossSensitivity": false,
+        "epilepsy": false,
+        "highBloodPressure": false,
+        "lowBloodPressure": true,
+        "homeopathyAvoid": false,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false,
+        "skinIrritation": false
     },
     {
         "name": "側柏醇百里香",
@@ -250,7 +404,18 @@
         "pattern": "蒸餾",
         "chemicalProperties": "單萜醇",
         "disease": "",
-        "note": ""
+        "note": "",
+        "toxicity": "",
+        "mucousIrritation": false,
+        "contactSensitivity": true,
+        "crossSensitivity": false,
+        "epilepsy": false,
+        "highBloodPressure": true,
+        "lowBloodPressure": false,
+        "homeopathyAvoid": false,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false,
+        "skinIrritation": false
     },
     {
         "name": "沉香醇百里香",
@@ -261,7 +426,18 @@
         "pattern": "蒸餾",
         "chemicalProperties": "單萜醇",
         "disease": "",
-        "note": ""
+        "note": "",
+        "toxicity": "",
+        "mucousIrritation": false,
+        "contactSensitivity": true,
+        "crossSensitivity": false,
+        "epilepsy": false,
+        "highBloodPressure": true,
+        "lowBloodPressure": false,
+        "homeopathyAvoid": false,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false,
+        "skinIrritation": false
     },
     {
         "name": "牻牛兒醇百里香",
@@ -272,7 +448,18 @@
         "pattern": "蒸餾",
         "chemicalProperties": "單萜醇",
         "disease": "",
-        "note": ""
+        "note": "",
+        "toxicity": "",
+        "mucousIrritation": false,
+        "contactSensitivity": true,
+        "crossSensitivity": false,
+        "epilepsy": false,
+        "highBloodPressure": true,
+        "lowBloodPressure": false,
+        "homeopathyAvoid": false,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false,
+        "skinIrritation": false
     },
     {
         "name": "百里酚百里香",
@@ -283,7 +470,18 @@
         "pattern": "蒸餾",
         "chemicalProperties": "酚",
         "disease": "",
-        "note": ""
+        "note": "",
+        "toxicity": "",
+        "mucousIrritation": true,
+        "contactSensitivity": true,
+        "crossSensitivity": false,
+        "epilepsy": false,
+        "highBloodPressure": true,
+        "lowBloodPressure": false,
+        "homeopathyAvoid": false,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false,
+        "skinIrritation": true
     },
     {
         "name": "桉油醇迷迭香",
@@ -294,7 +492,18 @@
         "pattern": "蒸餾",
         "chemicalProperties": "氧化物",
         "disease": "",
-        "note": ""
+        "note": "",
+        "toxicity": "",
+        "mucousIrritation": false,
+        "contactSensitivity": false,
+        "crossSensitivity": false,
+        "epilepsy": true,
+        "highBloodPressure": true,
+        "lowBloodPressure": false,
+        "homeopathyAvoid": true,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false,
+        "skinIrritation": false
     },
     {
         "name": "馬鞭草酮迷迭香",
@@ -305,7 +514,18 @@
         "pattern": "蒸餾",
         "chemicalProperties": "單萜酮",
         "disease": "",
-        "note": ""
+        "note": "",
+        "toxicity": "",
+        "mucousIrritation": false,
+        "contactSensitivity": false,
+        "crossSensitivity": false,
+        "epilepsy": true,
+        "highBloodPressure": true,
+        "lowBloodPressure": false,
+        "homeopathyAvoid": true,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false,
+        "skinIrritation": false
     },
     {
         "name": "樟腦迷迭香",
@@ -316,7 +536,18 @@
         "pattern": "蒸餾",
         "chemicalProperties": "單萜酮",
         "disease": "",
-        "note": ""
+        "note": "",
+        "toxicity": "",
+        "mucousIrritation": false,
+        "contactSensitivity": false,
+        "crossSensitivity": false,
+        "epilepsy": true,
+        "highBloodPressure": true,
+        "lowBloodPressure": false,
+        "homeopathyAvoid": true,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false,
+        "skinIrritation": false
     },
     {
         "name": "胡椒薄荷",
@@ -327,7 +558,18 @@
         "pattern": "蒸餾",
         "chemicalProperties": "單萜醇",
         "disease": "",
-        "note": ""
+        "note": "對白松香有過敏反應，也可能對胡椒薄荷產生交叉過敏反應",
+        "toxicity": "",
+        "mucousIrritation": false,
+        "contactSensitivity": true,
+        "crossSensitivity": false,
+        "epilepsy": false,
+        "highBloodPressure": false,
+        "lowBloodPressure": false,
+        "homeopathyAvoid": true,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false,
+        "skinIrritation": false
     },
     {
         "name": "綠薄荷",
@@ -349,7 +591,18 @@
         "pattern": "蒸餾",
         "chemicalProperties": "單萜醇",
         "disease": "",
-        "note": ""
+        "note": "",
+        "toxicity": "",
+        "mucousIrritation": false,
+        "contactSensitivity": false,
+        "crossSensitivity": false,
+        "epilepsy": false,
+        "highBloodPressure": false,
+        "lowBloodPressure": true,
+        "homeopathyAvoid": false,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false,
+        "skinIrritation": false
     },
     {
         "name": "香蜂草（蜜蜂花）",
@@ -360,7 +613,18 @@
         "pattern": "蒸餾",
         "chemicalProperties": "醛",
         "disease": "",
-        "note": ""
+        "note": "",
+        "toxicity": "光敏性",
+        "mucousIrritation": true,
+        "contactSensitivity": true,
+        "crossSensitivity": false,
+        "epilepsy": false,
+        "highBloodPressure": false,
+        "lowBloodPressure": true,
+        "homeopathyAvoid": false,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false,
+        "skinIrritation": false
     },
     {
         "name": "廣藿香",
@@ -393,7 +657,18 @@
         "pattern": "蒸餾",
         "chemicalProperties": "倍半萜烯",
         "disease": "",
-        "note": ""
+        "note": "",
+        "toxicity": "",
+        "mucousIrritation": false,
+        "contactSensitivity": true,
+        "crossSensitivity": false,
+        "epilepsy": false,
+        "highBloodPressure": false,
+        "lowBloodPressure": false,
+        "homeopathyAvoid": false,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false,
+        "skinIrritation": false
     },
     {
         "name": "羅馬洋甘菊",
@@ -404,7 +679,18 @@
         "pattern": "蒸餾",
         "chemicalProperties": "酯",
         "disease": "",
-        "note": ""
+        "note": "",
+        "toxicity": "",
+        "mucousIrritation": false,
+        "contactSensitivity": true,
+        "crossSensitivity": false,
+        "epilepsy": false,
+        "highBloodPressure": false,
+        "lowBloodPressure": false,
+        "homeopathyAvoid": false,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false,
+        "skinIrritation": false
     },
     {
         "name": "西洋蓍草",
@@ -415,7 +701,18 @@
         "pattern": "蒸餾",
         "chemicalProperties": "倍半萜烯",
         "disease": "",
-        "note": ""
+        "note": "對西洋蓍草產生過敏反應者，可能對其他菊科精油產生交叉過敏反應，例如：洋甘菊、永久花、金盞菊、萬壽菊等",
+        "toxicity": "",
+        "mucousIrritation": false,
+        "contactSensitivity": true,
+        "crossSensitivity": false,
+        "epilepsy": false,
+        "highBloodPressure": false,
+        "lowBloodPressure": true,
+        "homeopathyAvoid": false,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false,
+        "skinIrritation": false
     },
     {
         "name": "甜茴香",
@@ -426,7 +723,18 @@
         "pattern": "蒸餾",
         "chemicalProperties": "醚",
         "disease": "",
-        "note": ""
+        "note": "",
+        "toxicity": "",
+        "mucousIrritation": false,
+        "contactSensitivity": true,
+        "crossSensitivity": false,
+        "epilepsy": true,
+        "highBloodPressure": false,
+        "lowBloodPressure": false,
+        "homeopathyAvoid": false,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false,
+        "skinIrritation": false
     },
     {
         "name": "芫荽（胡荽）",
@@ -459,7 +767,17 @@
         "pattern": "壓榨",
         "chemicalProperties": "單萜烯（單萜）",
         "disease": "",
-        "note": ""
+        "note": "",
+        "toxicity": "光敏性",
+        "mucousIrritation": false,
+        "contactSensitivity": false,
+        "crossSensitivity": false,
+        "epilepsy": false,
+        "highBloodPressure": false,
+        "lowBloodPressure": false,
+        "homeopathyAvoid": false,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false
     },
     {
         "name": "葡萄柚",
@@ -470,7 +788,17 @@
         "pattern": "壓榨",
         "chemicalProperties": "單萜烯（單萜）",
         "disease": "",
-        "note": ""
+        "note": "",
+        "toxicity": "光敏性",
+        "mucousIrritation": false,
+        "contactSensitivity": false,
+        "crossSensitivity": false,
+        "epilepsy": false,
+        "highBloodPressure": false,
+        "lowBloodPressure": false,
+        "homeopathyAvoid": false,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false
     },
     {
         "name": "萊姆（酸橙）",
@@ -481,7 +809,17 @@
         "pattern": "壓榨",
         "chemicalProperties": "單萜烯（單萜）",
         "disease": "",
-        "note": ""
+        "note": "",
+        "toxicity": "光敏性",
+        "mucousIrritation": false,
+        "contactSensitivity": true,
+        "crossSensitivity": false,
+        "epilepsy": false,
+        "highBloodPressure": false,
+        "lowBloodPressure": false,
+        "homeopathyAvoid": false,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false
     },
     {
         "name": "檸檬",
@@ -492,7 +830,17 @@
         "pattern": "壓榨",
         "chemicalProperties": "單萜烯（單萜）",
         "disease": "",
-        "note": ""
+        "note": "",
+        "toxicity": "光敏性",
+        "mucousIrritation": false,
+        "contactSensitivity": true,
+        "crossSensitivity": false,
+        "epilepsy": false,
+        "highBloodPressure": false,
+        "lowBloodPressure": false,
+        "homeopathyAvoid": false,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false
     },
     {
         "name": "甜橙",
@@ -503,7 +851,17 @@
         "pattern": "壓榨",
         "chemicalProperties": "單萜烯（單萜）",
         "disease": "",
-        "note": ""
+        "note": "",
+        "toxicity": "光敏性",
+        "mucousIrritation": false,
+        "contactSensitivity": false,
+        "crossSensitivity": false,
+        "epilepsy": false,
+        "highBloodPressure": false,
+        "lowBloodPressure": true,
+        "homeopathyAvoid": false,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false
     },
     {
         "name": "橙花",
@@ -536,7 +894,17 @@
         "pattern": "壓榨",
         "chemicalProperties": "單萜烯（單萜）",
         "disease": "",
-        "note": ""
+        "note": "",
+        "toxicity": "光敏性",
+        "mucousIrritation": false,
+        "contactSensitivity": false,
+        "crossSensitivity": false,
+        "epilepsy": false,
+        "highBloodPressure": false,
+        "lowBloodPressure": false,
+        "homeopathyAvoid": false,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false
     },
     {
         "name": "佛手柑",
@@ -547,7 +915,17 @@
         "pattern": "壓榨",
         "chemicalProperties": "單萜烯（單萜）",
         "disease": "",
-        "note": ""
+        "note": "",
+        "toxicity": "光敏性",
+        "mucousIrritation": false,
+        "contactSensitivity": true,
+        "crossSensitivity": false,
+        "epilepsy": false,
+        "highBloodPressure": false,
+        "lowBloodPressure": false,
+        "homeopathyAvoid": false,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false
     },
     {
         "name": "大馬士革玫瑰",
@@ -580,7 +958,18 @@
         "pattern": "溶劑",
         "chemicalProperties": "苯基酯",
         "disease": "",
-        "note": ""
+        "note": "原精",
+        "toxicity": "",
+        "mucousIrritation": false,
+        "contactSensitivity": true,
+        "crossSensitivity": false,
+        "epilepsy": false,
+        "highBloodPressure": false,
+        "lowBloodPressure": false,
+        "homeopathyAvoid": false,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false,
+        "skinIrritation": false
     },
     {
         "name": "波旁天竺葵",
@@ -602,7 +991,18 @@
         "pattern": "蒸餾",
         "chemicalProperties": "醛",
         "disease": "",
-        "note": ""
+        "note": "",
+        "toxicity": "",
+        "mucousIrritation": true,
+        "contactSensitivity": true,
+        "crossSensitivity": false,
+        "epilepsy": false,
+        "highBloodPressure": false,
+        "lowBloodPressure": false,
+        "homeopathyAvoid": false,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false,
+        "skinIrritation": true
     },
     {
         "name": "玫瑰草",
@@ -635,7 +1035,18 @@
         "pattern": "蒸餾",
         "chemicalProperties": "倍半萜烯",
         "disease": "",
-        "note": ""
+        "note": "",
+        "toxicity": "光敏性",
+        "mucousIrritation": false,
+        "contactSensitivity": true,
+        "crossSensitivity": false,
+        "epilepsy": false,
+        "highBloodPressure": false,
+        "lowBloodPressure": false,
+        "homeopathyAvoid": false,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false,
+        "skinIrritation": false
     },
     {
         "name": "小豆蔻",
@@ -657,7 +1068,19 @@
         "pattern": "蒸餾",
         "chemicalProperties": "倍半萜烯",
         "disease": "",
-        "note": ""
+        "note": "",
+        "toxicity": "",
+        "mucousIrritation": false,
+        "contactSensitivity": true,
+        "crossSensitivity": false,
+        "epilepsy": false,
+        "highBloodPressure": false,
+        "lowBloodPressure": false,
+        "homeopathyAvoid": true,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false,
+        "skinIrritation": false
+        
     },
     {
         "name": "依蘭",
@@ -668,7 +1091,18 @@
         "pattern": "蒸餾",
         "chemicalProperties": "酯",
         "disease": "",
-        "note": ""
+        "note": "",
+        "toxicity": "",
+        "mucousIrritation": false,
+        "contactSensitivity": true,
+        "crossSensitivity": false,
+        "epilepsy": false,
+        "highBloodPressure": false,
+        "lowBloodPressure": true,
+        "homeopathyAvoid": false,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false,
+        "skinIrritation": false
     },
     {
         "name": "澳洲檀香",
@@ -712,7 +1146,18 @@
         "pattern": "溶劑",
         "chemicalProperties": "芳香酯",
         "disease": "",
-        "note": ""
+        "note": "對秘魯香脂產生過敏反應，可能對安息香也會有過敏反應",
+        "toxicity": "",
+        "mucousIrritation": false,
+        "contactSensitivity": true,
+        "crossSensitivity": false,
+        "epilepsy": false,
+        "highBloodPressure": false,
+        "lowBloodPressure": false,
+        "homeopathyAvoid": false,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false,
+        "skinIrritation": false
     },
     {
         "name": "錫蘭肉桂",
@@ -723,7 +1168,17 @@
         "pattern": "蒸餾",
         "chemicalProperties": "酚類",
         "disease": "",
-        "note": ""
+        "note": "",
+        "toxicity": "光敏性",
+        "mucousIrritation": false,
+        "contactSensitivity": false,
+        "crossSensitivity": false,
+        "epilepsy": false,
+        "highBloodPressure": false,
+        "lowBloodPressure": false,
+        "homeopathyAvoid": false,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false
     },
     {
         "name": "山雞椒",
@@ -734,7 +1189,18 @@
         "pattern": "蒸餾",
         "chemicalProperties": "醛",
         "disease": "",
-        "note": ""
+        "note": "",
+        "toxicity": "",
+        "mucousIrritation": false,
+        "contactSensitivity": true,
+        "crossSensitivity": false,
+        "epilepsy": false,
+        "highBloodPressure": false,
+        "lowBloodPressure": false,
+        "homeopathyAvoid": false,
+        "ifaSkinBan": false,
+        "ifaAromatherapyBan": false,
+        "skinIrritation": false
     },
     {
         "name": "（芳香）羅文莎葉",
