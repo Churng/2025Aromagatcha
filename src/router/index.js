@@ -12,7 +12,7 @@ import OilExamPage from "@/views/OilExamPage.vue";
 Vue.use(Router);
 
 export default new Router({
-	mode: "history",
+	mode: "hash",
 	routes: [
 		{
 			path: "/exam",

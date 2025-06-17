@@ -1,16 +1,12 @@
 <template>
   <div id="app">
-    <a
-      href="https://churng.github.io/2025Aromagatcha/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
+    <router-link to="/">
       <img
+        alt="Vue logo"
         src="./assets/logo.png"
-        alt="logo"
-        style="width:150px; cursor:pointer;"
+        style="width: 150px; cursor: pointer;"
       >
-    </a>
+    </router-link>
     <h1>Welcome to learn Aroma</h1>
     <NavBar />
     <router-view />
