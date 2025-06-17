@@ -45,7 +45,17 @@
           type="button"
           class="btn btn-outline-secondary"
         >
-          考試去
+          10題牛刀小試去
+        </button>
+      </router-link>
+
+      <!-- 考試去按鈕 -->
+      <router-link to="/examQ1">
+        <button
+          type="button"
+          class="btn btn-outline-secondary"
+        >
+          3分鐘默寫考試去
         </button>
       </router-link>
     </div>

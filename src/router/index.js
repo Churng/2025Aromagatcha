@@ -4,6 +4,7 @@ import Router from "vue-router";
 // 匯入頁面元件（你自己要建立 ExamPage.vue）
 // import HomePage from "../views/HomePage.vue";
 import ExamPage from "../views/ExamPage.vue";
+import ExamPageQ1 from "../views/SpellingQuiz.vue";
 import LearningPage from "@/views/LearningPage.vue";
 import OilPage from "@/views/OilPage.vue";
 import OilExamPage from "@/views/OilExamPage.vue";
@@ -32,6 +33,11 @@ export default new Router({
 			path: "/oilExam",
 			name: "OilExamPage",
 			component: OilExamPage,
+		},
+		{
+			path: "/examQ1",
+			name: "ExamPageQ1",
+			component: ExamPageQ1,
 		},
 	],
 });
