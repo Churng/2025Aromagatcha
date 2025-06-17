@@ -308,4 +308,24 @@ export default {
   max-width: 600px;
   margin: 0 auto;
 }
+
+.list-group-item {
+  margin-bottom: 8px; /* 選項間留空 */
+  border-radius: 8px; /* 順便加個圓角更可愛 */
+}
+
+
+.list-group-item-success {
+  border: 2px solid #28a745 !important; /* 加粗框線 */
+  background-color: #d4edda !important; /* 更明顯的綠色背景 */
+  font-weight: bold;
+}
+
+.list-group-item-danger {
+  border: 2px solid #dc3545 !important;
+  background-color: #f8d7da !important;
+  font-weight: bold;
+}
+
+
 </style>
