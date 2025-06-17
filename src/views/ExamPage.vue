@@ -309,23 +309,40 @@ export default {
   margin: 0 auto;
 }
 
+.list-group-item-success,
+.list-group-item-danger {
+  position: relative;
+  z-index: 2;
+  border: none; 
+}
+
+
 .list-group-item {
-  margin-bottom: 8px; /* 選項間留空 */
-  border-radius: 8px; /* 順便加個圓角更可愛 */
+  margin-bottom: 8px; 
+  border-radius: 8px;
+  border: 0.5px solid #ccc; 
+  transition: all 0.2s ease-in-out;
 }
 
 
 .list-group-item-success {
-  border: 2px solid #28a745 !important; /* 加粗框線 */
-  background-color: #d4edda !important; /* 更明顯的綠色背景 */
+  box-shadow: 0 0 0 2px #28a745;
+  background-color: #d4edda !important;
   font-weight: bold;
 }
 
 .list-group-item-danger {
-  border: 2px solid #dc3545 !important;
+  box-shadow: 0 0 0 2px #dc3545;
   background-color: #f8d7da !important;
   font-weight: bold;
 }
+
+
+.list-group-item:hover:not(:disabled) {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
 
 
 </style>
