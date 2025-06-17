@@ -1,10 +1,12 @@
 <template>
   <div id="app">
-    <img
-      alt="Vue logo"
-      src="./assets/logo.png"
-      style="width: 150px;"
-    >
+    <router-link to="/">
+      <img
+        alt="Vue logo"
+        src="./assets/logo.png"
+        style="width: 150px; cursor: pointer;"
+      >
+    </router-link>
     <h1>Welcome to learn Aroma</h1>
     <NavBar />
     <router-view />

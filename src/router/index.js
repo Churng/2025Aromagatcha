@@ -5,6 +5,8 @@ import Router from "vue-router";
 // import HomePage from "../views/HomePage.vue";
 import ExamPage from "../views/ExamPage.vue";
 import LearningPage from "@/views/LearningPage.vue";
+import OilPage from "@/views/OilPage.vue";
+import OilExamPage from "@/views/OilExamPage.vue";
 
 Vue.use(Router);
 
@@ -20,6 +22,16 @@ export default new Router({
 			path: "/learn",
 			name: "LearningPage",
 			component: LearningPage,
+		},
+		{
+			path: "/learnOil",
+			name: "OilPage",
+			component: OilPage,
+		},
+		{
+			path: "/oilExam",
+			name: "OilExamPage",
+			component: OilExamPage,
 		},
 	],
 });

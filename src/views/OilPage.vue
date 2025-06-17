@@ -5,7 +5,7 @@
       <div class="dropdown">
         <button
           id="dropdownMenuButton1"
-          class="btn btn-secondary dropdown-toggle"
+          class="btn btn-success dropdown-toggle"
           type="button"
           data-bs-toggle="dropdown"
           aria-expanded="false"
@@ -40,7 +40,7 @@
       </div>
 
       <!-- 考試去按鈕 -->
-      <router-link to="/exam">
+      <router-link to="/oilExam">
         <button
           type="button"
           class="btn btn-outline-secondary"
@@ -58,7 +58,7 @@
           :key="index"
           class="col-12 col-md-4 mb-4"
         >
-          <acard :json-data="data" />
+          <bcard :json-data="data" />
         </div>
       </div>
     </div>
@@ -66,11 +66,11 @@
 </template>
 
 <script>
-import Acard from '../components/card/a-card.vue';
-import jsonData from '../JSON/V.json'
+import Bcard from '../components/card/b-card.vue';
+import jsonData from '../JSON/O.json'; // Adjust the path to your JSON file
 
 export default {
-  components: { Acard },
+  components: { Bcard },
   data() {
     return {
       jsonData,
@@ -80,12 +80,12 @@ export default {
   computed: {
     uniqueCategories() {
       // Extract unique categories from jsonData
-      const categories = this.jsonData.map(item => item.family); // Adjust 'family' if category property is different
+      const categories = this.jsonData.map(item => item.Family); // Adjust 'family' if category property is different
       return [...new Set(categories)]; // Ensures unique values
     },
     filteredData() {
       if (this.currentCategory) {
-        return this.jsonData.filter(item => item.family === this.currentCategory); // Adjust 'family' if needed
+        return this.jsonData.filter(item => item.Family === this.currentCategory); // Adjust 'family' if needed
       }
       return this.jsonData;
     },

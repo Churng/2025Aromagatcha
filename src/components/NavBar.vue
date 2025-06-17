@@ -12,12 +12,12 @@
           70隻精油學習本
         </button>
       </router-link>
-      <router-link to="/exam">
+      <router-link to="/learnOil">
         <button
           type="button"
-          class="btn btn-outline-secondary"
+          class="btn btn-warning"
         >
-          考試去
+          30隻植物油學習本
         </button>
       </router-link>
     </div>
@@ -29,10 +29,7 @@
 export default {
   name: 'NavBar',
   props: {
-    uniqueCategories: {
-      type: Array,
-      required: true
-    }
+    
   }
 }
 </script>
