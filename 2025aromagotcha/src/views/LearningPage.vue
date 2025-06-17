@@ -1,42 +1,39 @@
 <template>
   <div>
-    <nav
-      class="navbar px-5 "
-      style="background-color: #e3f2fd;"
+    <button
+      id="dropdownMenuButton1"
+      class="btn btn-secondary dropdown-toggle mt-3"
+      type="button"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
     >
-      <button
-        id="dropdownMenuButton1"
-        class="btn btn-secondary dropdown-toggle"
-        type="button"
-        data-bs-toggle="dropdown"
-        aria-expanded="false"
-      >
-        Select Category
-      </button>
-      <ul
-        class="dropdown-menu"
-        aria-labelledby="dropdownMenuButton1"
-      >
-        <li>
-          <a
-            class="dropdown-item"
-            href="#"
-            @click="filterData('')"
-          >All</a>
-        </li>
-        <li
-          v-for="category in uniqueCategories"
-          :key="category"
-        >
-          <a
-            class="dropdown-item"
-            href="#"
-            @click="filterData(category)"
-          >{{ category }}</a>
-        </li>
-      </ul>
-    </nav>
+      Select Category
+    </button>
 
+    <ul
+      class="dropdown-menu"
+      aria-labelledby="dropdownMenuButton1"
+    >
+      <li>
+        <a
+          class="dropdown-item"
+          href="#"
+          @click="filterData('')"
+        >All</a>
+      </li>
+      <li
+        v-for="category in uniqueCategories"
+        :key="category"
+      >
+        <a
+          class="dropdown-item"
+          href="#"
+          @click="filterData(category)"
+        >
+          {{ category }}
+        </a>
+      </li>
+    </ul>
 
     <div class="container text-center mt-5">
       <div class="row align-items-start">
@@ -53,7 +50,7 @@
 </template>
 
 <script>
-import Acard from './card/a-card.vue';
+import Acard from '../components/card/a-card.vue';
 import jsonData from '../JSON/V.json'
 
 export default {
