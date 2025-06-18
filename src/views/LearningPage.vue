@@ -1,6 +1,6 @@
 <template>
   <div class="px-5">
-    <div class="d-flex align-items-center gap-2 mt-3">
+    <div class="d-flex justify-content-center align-items-center gap-2 mt-3">
       <!-- 篩選按鈕 -->
       <div class="dropdown">
         <button

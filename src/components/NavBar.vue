@@ -1,9 +1,9 @@
 <template>
   <nav
-    class="navbar p-3 mb-3"
-    style="background-color: #e3f2fd;"
+    class="navbar p-3 mb-3 d-flex justify-content-center"
+    style="background-color: #f5f5f5;"
   >
-    <div class="d-flex gap-2">
+    <div class="d-flex  gap-2">
       <router-link to="/learn">
         <button
           type="button"

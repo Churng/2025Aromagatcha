@@ -35,10 +35,17 @@ export default {
 </script>
 
 <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 html, body, #app {
   height: 100%;
   margin: 0;
   padding: 0;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: linear-gradient(#f8fdfc, #ffffff);
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
 }
 
 #app {
@@ -50,7 +57,17 @@ html, body, #app {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+
 }
+
+/* 標題 */
+h1 {
+  font-family: 'Satisfy', cursive;
+  font-size: 2.5rem;
+  color: #37504d;
+  margin-bottom: 20px;
+}
+
 
 .page-wrapper {
   flex: 1;
