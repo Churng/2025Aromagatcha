@@ -73,7 +73,7 @@
         "pattern": "蒸餾",
         "chemicalProperties": "單萜烯",
         "disease": "",
-        "note": ""
+        "note": "自古與死亡、重生有關，semprevirens意指「永恆」的意思"
     },
     {
         "name": "乳香",
@@ -304,7 +304,7 @@
         "pattern": "蒸餾",
         "chemicalProperties": "單萜醇",
         "disease": "",
-        "note": ""
+        "note": "basilicum源自希臘文「basileus」，意指「君王」"
     },
     {
         "name": "真正薰衣草",
@@ -591,7 +591,7 @@
         "pattern": "蒸餾",
         "chemicalProperties": "單萜醇",
         "disease": "",
-        "note": "",
+        "note": "mariole&majorana意指「聖母瑪麗亞」，如慈母的手輕撫",
         "toxicity": "",
         "mucousIrritation": false,
         "contactSensitivity": false,
@@ -613,7 +613,7 @@
         "pattern": "蒸餾",
         "chemicalProperties": "醛",
         "disease": "",
-        "note": "",
+        "note": "Melissa來自希臘文「受到蜜蜂喜歡的草」",
         "toxicity": "光敏性",
         "mucousIrritation": true,
         "contactSensitivity": true,
@@ -635,7 +635,7 @@
         "pattern": "蒸餾",
         "chemicalProperties": "倍半萜醇",
         "disease": "",
-        "note": ""
+        "note": "Pachouli來自南印度泰米爾語「patchai」，意指「綠色」，因為其葉片呈現深綠色。ellai意指「葉子」，因此patchouli的意思是「綠葉」。"
     },
     {
         "name": "永久花（蠟菊）",
@@ -679,7 +679,7 @@
         "pattern": "蒸餾",
         "chemicalProperties": "酯",
         "disease": "",
-        "note": "",
+        "note": "「chamomile」一詞源自希臘文，意指「地上的蘋果」，因為其花朵的香氣類似蘋果",
         "toxicity": "",
         "mucousIrritation": false,
         "contactSensitivity": true,
@@ -701,7 +701,7 @@
         "pattern": "蒸餾",
         "chemicalProperties": "倍半萜烯",
         "disease": "",
-        "note": "對西洋蓍草產生過敏反應者，可能對其他菊科精油產生交叉過敏反應，例如：洋甘菊、永久花、金盞菊、萬壽菊等",
+        "note": "對西洋蓍草產生過敏反應者，可能對其他菊科精油產生交叉過敏反應，例如：洋甘菊、永久花、金盞菊、萬壽菊等。 「Achillea」，希臘戰神阿基里斯受傷時使用來修復傷口的草藥。",
         "toxicity": "",
         "mucousIrritation": false,
         "contactSensitivity": true,
@@ -745,7 +745,7 @@
         "pattern": "蒸餾",
         "chemicalProperties": "單萜醇",
         "disease": "",
-        "note": ""
+        "note": "Coriander來自<自然史>，古羅馬作家老普林尼命名：意指：「聞起來像跳蚤」。取自「種子」部位的芫荽有保養卵巢、腸道的功效"
     },
     {
         "name": "芫荽（胡荽）",
@@ -756,7 +756,7 @@
         "pattern": "蒸餾",
         "chemicalProperties": "醛",
         "disease": "",
-        "note": ""
+        "note": "取自「葉片」部位的芫荽有抗氧化、消除自由基、體內重金屬的功效"
     },
     {
         "name": "柑桔（橘樹／紅桔）",
@@ -951,8 +951,8 @@
     },
     {
         "name": "茉莉",
-        "scientificName": "Jasmine",
-        "english": "Jasminum grandiflorum/ Jasminum officinale",
+        "scientificName": "Jasminum grandiflorum/ Jasminum officinale",
+        "english": "Jasmine",
         "family": "木樨科",
         "part": "花",
         "pattern": "溶劑",
@@ -1024,7 +1024,7 @@
         "pattern": "蒸餾",
         "chemicalProperties": "倍半萜醇",
         "disease": "",
-        "note": ""
+        "note": "zizanioides意指「沿著河邊」，如同岩蘭草生長的地區。"
     },
     {
         "name": "薑",
@@ -1124,7 +1124,7 @@
         "pattern": "蒸餾",
         "chemicalProperties": "倍半萜醇",
         "disease": "",
-        "note": ""
+        "note": "album意指「白色」，將樹皮剝下便會看見白色的邊材引此得名"
     },
     {
         "name": "新克里多尼亞檀香",
@@ -1205,13 +1205,13 @@
     {
         "name": "（芳香）羅文莎葉",
         "scientificName": "Ravensara aromatica",
-        "english": "Ravensara",
+        "english": "Ravintsara",
         "family": "樟科",
         "part": "葉片",
         "pattern": "蒸餾",
         "chemicalProperties": "醚類",
         "disease": "",
-        "note": ""
+        "note": "Ravintsara，意指「美好的葉子」"
     },
     {
         "name": "薔薇木（花梨木）",

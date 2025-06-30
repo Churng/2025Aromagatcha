@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <div class="page-wrapper">
+    <div class="page-wrapper ">
+      <NavBar />
       <a
         href="https://churng.github.io/2025Aromagatcha/"
         target="_blank"
@@ -14,22 +15,25 @@
       </a>
 
       <h1>Welcome to learn Aroma</h1>
-      <NavBar />
+    
       <router-view />
     </div>
     <FooterSide />
+    <ScrollToTop />
   </div>
 </template>
 
 <script>
 import NavBar from './components/NavBar.vue'
 import FooterSide from './components/FooterSide.vue'
+import ScrollToTop from './components/ScrollToTop.vue'
 
 export default {
   name: 'App',
   components: {
     NavBar,
-    FooterSide
+    FooterSide,
+    ScrollToTop
   }
 }
 </script>
