@@ -58,6 +58,15 @@
           3分鐘默寫考試去
         </button>
       </router-link>
+      <!-- 錯題練習 -->
+      <router-link to="/answerQ1">
+        <button
+          type="button"
+          class="btn btn-outline-secondary"
+        >
+          錯題本
+        </button>
+      </router-link>
     </div>
 
 

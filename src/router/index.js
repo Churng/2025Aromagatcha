@@ -8,6 +8,7 @@ import ExamPageQ1 from "../views/SpellingQuiz.vue";
 import LearningPage from "@/views/LearningPage.vue";
 import OilPage from "@/views/OilPage.vue";
 import OilExamPage from "@/views/OilExamPage.vue";
+import AnswerQ1 from "@/views/FrequentMistakes.vue";
 
 Vue.use(Router);
 
@@ -38,6 +39,11 @@ export default new Router({
 			path: "/examQ1",
 			name: "ExamPageQ1",
 			component: ExamPageQ1,
+		},
+		{
+			path: "/answerQ1",
+			name: "AnswerQ1",
+			component: AnswerQ1,
 		},
 	],
 });

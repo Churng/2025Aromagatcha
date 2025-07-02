@@ -1,5 +1,6 @@
 <template>
   <div class="spelling-quiz p-4">
+    <!-- 起始畫面 -->
     <div
       v-if="!quizStarted"
       class="text-center"
@@ -13,14 +14,19 @@
       </button>
     </div>
 
+    <!-- 題目進行中 -->
     <div v-else-if="!quizEnded">
       <div class="text-end text-muted mb-2">
         ⏳ 剩下時間：{{ remainingTime }} 秒
       </div>
-
       <h4 class="mb-3">
-        {{ isFillInTheBlank ? '填空題｜' : '拼寫題｜' }}
-        請輸入「{{ currentQuestion.prompt }}」的 {{ currentQuestion.fieldLabel }}
+        {{ isFillInTheBlank ? '填空題｜' : '拼寫題｜' }}請輸入「{{ currentQuestion.prompt }}」的 {{ currentQuestion.fieldLabel }}
+        <span 
+          v-if="errorCount[currentQuestion.answer]?.count >= 3"
+          class="badge bg-danger ms-2"
+        >
+          super
+        </span>
       </h4>
 
       <div v-if="isFillInTheBlank">
@@ -42,8 +48,13 @@
         <p :class="{'text-success': isCorrect, 'text-danger': !isCorrect}">
           {{ isCorrect ? '✔️ 答對了！' : `❌ 答錯了，正確答案是：${currentQuestion.answer}` }}
         </p>
+        <p
+          v-if="!isCorrect"
+          class="text-danger"
+          v-html="diffHtml"
+        />
         <p class="text-muted">
-          這題你目前已經錯了 {{ errorCount[currentQuestion.answer] || 0 }} 次
+          這題你目前已經錯了 {{ errorCount[currentQuestion.answer]?.count || 0 }} 次
         </p>
         <button
           class="btn btn-secondary mt-2"
@@ -54,6 +65,7 @@
       </div>
     </div>
 
+    <!-- 結束畫面 -->
     <div v-else>
       <h2 class="mb-4 text-center">
         ⏰ 時間到囉！
@@ -75,6 +87,12 @@
             <div class="card-body">
               <h5 class="card-title">
                 題目：{{ q.prompt }}（{{ q.fieldLabel }}｜{{ q.isFill ? '填空' : '拼寫' }}）
+                <span 
+                  v-if="errorCount[q.answer]?.count >= 3"
+                  class="badge bg-danger ms-2"
+                >
+                  super
+                </span>
               </h5>
               <p class="card-text mb-1">
                 你的回答：<span class="text-danger fw-bold">{{ q.userInput }}</span>
@@ -83,7 +101,7 @@
                 正確答案：<span class="text-success">{{ q.answer }}</span>
               </p>
               <p class="text-muted">
-                錯誤次數：{{ errorCount[q.answer] || 1 }} 次
+                錯誤次數：{{ errorCount[q.answer]?.count || 1 }} 次
               </p>
             </div>
           </div>
@@ -91,20 +109,34 @@
       </div>
 
       <div
-        v-else
+        v-else-if="!recordsCleared"
         class="text-center"
       >
         <p class="text-success fs-4">
           太厲害了！你沒有答錯任何一題 🎉
         </p>
       </div>
+      <div
+        v-else
+        class="text-center"
+      >
+        <p class="text-success fs-4">
+          您的作答紀錄已消除
+        </p>
+      </div>
 
       <div class="text-center mt-4">
         <button
-          class="btn btn-primary"
+          class="btn btn-primary me-2"
           @click="startQuiz"
         >
           重新練習
+        </button>
+        <button
+          class="btn btn-danger"
+          @click="clearRecords"
+        >
+          清除紀錄
         </button>
       </div>
     </div>
@@ -131,8 +163,10 @@ export default {
       ],
       isFillInTheBlank: false,
       timer: null,
-      remainingTime: 180, // 秒數（例如 3 分鐘）,
-      wrongQuestions: []
+      remainingTime: 10,
+      wrongQuestions: [],
+      diffHtml: '',
+      recordsCleared: false
     };
   },
   beforeDestroy() {
@@ -140,33 +174,18 @@ export default {
   },
   methods: {
     startQuiz() {
-      this.normalizedData = this.shuffleArray(this.normalizeData(jsonData));
       this.quizStarted = true;
       this.quizEnded = false;
-      this.remainingTime = 180;
-      this.errorCount = {};
+      this.remainingTime = 10;
+      this.userInput = '';
+      this.answered = false;
+      this.isCorrect = false;
+      this.recordsCleared = false;
+      this.loadWrongQuestionsFromLocalStorage();
+
+      this.normalizedData = this.shuffleArray(this.normalizeData(jsonData));
       this.nextQuestion();
       this.startCountdown();
-    },
-    restartQuiz() {
-      this.quizStarted = false;
-      this.quizEnded = false;
-      this.userInput = '';
-      this.currentQuestion = {};
-      clearInterval(this.timer);
-    },
-    startCountdown() {
-      this.timer = setInterval(() => {
-        if (this.remainingTime > 0) {
-          this.remainingTime--;
-        } else {
-          this.endQuiz();
-        }
-      }, 1000);
-    },
-    endQuiz() {
-      clearInterval(this.timer);
-      this.quizEnded = true;
     },
     normalizeData(dataArray) {
       return dataArray.map(item => ({
@@ -186,10 +205,7 @@ export default {
       if (isFill) {
         const start = Math.floor(answer.length / 3);
         const end = Math.floor(answer.length * 2 / 3);
-        blankText = answer
-          .split('')
-          .map((char, i) => (i >= start && i < end ? '_' : char))
-          .join('');
+        blankText = answer.split('').map((char, i) => (i >= start && i < end ? '_' : char)).join('');
       }
 
       return {
@@ -203,35 +219,96 @@ export default {
     },
     checkAnswer() {
       this.answered = true;
-      const correct = this.currentQuestion.answer.trim().toLowerCase();
-      const userAns = this.userInput.trim().toLowerCase();
+      const correct = this.currentQuestion.answer.trim();
+      const userAns = this.userInput.trim();
 
-      this.isCorrect = userAns === correct;
+      this.isCorrect = userAns !== '' && userAns.toLowerCase() === correct.toLowerCase();
 
-     if (!this.isCorrect) {
-  const ans = this.currentQuestion.answer;
-  this.errorCount[ans] = (this.errorCount[ans] || 0) + 1;
+      if (!this.isCorrect) {
+        const today = new Date().toISOString().split('T')[0];
+        const ans = this.currentQuestion.answer;
 
-  this.wrongQuestions.push({
-    ...this.currentQuestion,
-    userInput: this.userInput
-  });
-}
-      
+        if (!this.errorCount[ans]) {
+          this.errorCount[ans] = { count: 1, lastWrong: today };
+        } else {
+          this.errorCount[ans].count++;
+          this.errorCount[ans].lastWrong = today;
+        }
+
+        this.wrongQuestions.push({ ...this.currentQuestion, userInput: this.userInput });
+
+        this.diffHtml = this.generateDiffHTML(userAns, correct);
+
+        this.saveWrongQuestionsToLocalStorage();
+      } else {
+        this.diffHtml = '';
+      }
+    },
+    generateDiffHTML(user, correct) {
+      if (!user) {
+        return `錯字對照：<span class="wrong-letter">${'_'.repeat(correct.length)}</span>`;
+      }
+
+      const userChars = user.split('');
+      const correctChars = correct.split('');
+      let result = '錯字對照：';
+
+      const maxLength = Math.max(userChars.length, correctChars.length);
+      for (let i = 0; i < maxLength; i++) {
+        const userChar = userChars[i] || '';
+        const correctChar = correctChars[i] || '';
+
+        if (userChar && userChar.toLowerCase() === correctChar.toLowerCase()) {
+          result += userChar;
+        } else {
+          result += `<span class="wrong-letter">${userChar || ' '}</span>`;
+        }
+      }
+
+      return result;
     },
     nextQuestion() {
       this.userInput = '';
       this.answered = false;
       this.isCorrect = false;
-
       if (!this.quizEnded) {
         const q = this.generateQuestion();
         this.currentQuestion = q;
         this.isFillInTheBlank = q.isFill;
       }
     },
+    endQuiz() {
+      clearInterval(this.timer);
+      this.quizEnded = true;
+    },
+    startCountdown() {
+      this.timer = setInterval(() => {
+        if (this.remainingTime > 0) {
+          this.remainingTime--;
+        } else {
+          this.endQuiz();
+        }
+      }, 1000);
+    },
     shuffleArray(array) {
       return [...array].sort(() => Math.random() - 0.5);
+    },
+    saveWrongQuestionsToLocalStorage() {
+      localStorage.setItem('wrongQuestions', JSON.stringify(this.wrongQuestions));
+      localStorage.setItem('errorCount', JSON.stringify(this.errorCount));
+    },
+    loadWrongQuestionsFromLocalStorage() {
+      const wrong = localStorage.getItem('wrongQuestions');
+      const count = localStorage.getItem('errorCount');
+      this.wrongQuestions = wrong ? JSON.parse(wrong) : [];
+      this.errorCount = count ? JSON.parse(count) : {};
+    },
+    clearRecords() {
+      this.wrongQuestions = [];
+      this.errorCount = {};
+      localStorage.removeItem('wrongQuestions');
+      localStorage.removeItem('errorCount');
+      this.recordsCleared = true;
     }
   }
 };
@@ -241,5 +318,18 @@ export default {
 .spelling-quiz {
   max-width: 600px;
   margin: 0 auto;
+}
+
+/* 錯字紅色加粗 */
+.wrong-letter {
+  color: red;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Bootstrap badge styling */
+.badge {
+  vertical-align: middle;
+  font-size: 0.8em;
 }
 </style>

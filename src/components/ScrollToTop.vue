@@ -5,7 +5,7 @@
     aria-label="Go to top"
     @click="scrollToTop"
   >
-    ⬆
+    ⇧
   </button>
 </template>
 
