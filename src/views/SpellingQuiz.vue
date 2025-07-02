@@ -163,7 +163,7 @@ export default {
       ],
       isFillInTheBlank: false,
       timer: null,
-      remainingTime: 10,
+      remainingTime: 180,
       wrongQuestions: [],
       diffHtml: '',
       recordsCleared: false
@@ -176,7 +176,7 @@ export default {
     startQuiz() {
       this.quizStarted = true;
       this.quizEnded = false;
-      this.remainingTime = 10;
+      this.remainingTime = 180;
       this.userInput = '';
       this.answered = false;
       this.isCorrect = false;
