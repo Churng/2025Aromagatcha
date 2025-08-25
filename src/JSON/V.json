@@ -650,8 +650,8 @@
     },
     {
         "name": "德國洋甘菊",
-        "scientificName": "German chamomile",
-        "english": "Matricaria recutita",
+        "scientificName": "Matricaria recutita",
+        "english": "German chamomile",
         "family": "菊科",
         "part": "花",
         "pattern": "蒸餾",
