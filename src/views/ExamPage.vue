@@ -192,14 +192,14 @@ export default {
     generateQuestion(item) {
       // 定義題型：promptField, answerField, promptLabel
       const types = [
-        { promptField: 'english', answerField: 'name', promptLabel: '以下哪一個是此英文名稱對應的中文？' },
-        { promptField: 'name', answerField: 'english', promptLabel: '以下哪一個是此中文名稱對應的英文？' },
-        { promptField: 'name', answerField: 'family', promptLabel: '以下哪一個是此中文名稱對應的科別？' },
-        { promptField: 'name', answerField: 'scientificName', promptLabel: '以下哪一個是此中文名稱對應的學名？' },
-        { promptField: 'name', answerField: 'part', promptLabel: '以下哪一個是此中文名稱常用的部位？' },
-        { promptField: 'name', answerField: 'pattern', promptLabel: '以下哪一個是此中文名稱的外觀型態/萃取方式？' },
-        // chemicalProperties 若過於集中，可以不加入，或改成是非題，這裡先不自動加入
-      ];
+      { promptField: 'english', answerField: 'name', promptLabel: '以下哪一個是此英文名稱對應的中文？' },
+      { promptField: 'name', answerField: 'english', promptLabel: '以下哪一個是此中文名稱對應的英文？' },
+      { promptField: 'name', answerField: 'family', promptLabel: '以下哪一個是此中文名稱對應的科別？' },
+      { promptField: 'name', answerField: 'scientificName', promptLabel: '以下哪一個是此中文名稱對應的學名？' },
+      { promptField: 'name', answerField: 'part', promptLabel: '以下哪一個是此中文名稱常用的部位？' },
+      { promptField: 'name', answerField: 'pattern', promptLabel: '以下哪一個是此中文名稱的外觀型態/萃取方式？' },
+      { promptField: 'name', answerField: 'chemicalProperties', promptLabel: '以下哪一個是此中文名稱對應的化學型態？' }, // ⬅️ 新增這行
+    ];
       // 隨機題型
       const type = types[Math.floor(Math.random() * types.length)];
       // 正確答案
