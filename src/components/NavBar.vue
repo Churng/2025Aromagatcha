@@ -4,7 +4,7 @@
     style="background-color: #f5f5f5;"
   >
     <div class="d-flex  gap-2">
-      <router-link to="/learn">
+      <!-- <router-link to="/learn">
         <button
           type="button"
           class="btn btn-warning"
@@ -18,6 +18,14 @@
           class="btn btn-warning"
         >
           30隻植物油學習本
+        </button>
+      </router-link> -->
+      <router-link to="/game">
+        <button
+          type="button"
+          class="btn btn-warning"
+        >
+          香氣記憶挑戰
         </button>
       </router-link>
     </div>

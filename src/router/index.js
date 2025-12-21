@@ -9,6 +9,7 @@ import LearningPage from "@/views/LearningPage.vue";
 import OilPage from "@/views/OilPage.vue";
 import OilExamPage from "@/views/OilExamPage.vue";
 import AnswerQ1 from "@/views/FrequentMistakes.vue";
+import AromaGame from "../views/AromaGame.vue";
 
 Vue.use(Router);
 
@@ -44,6 +45,11 @@ export default new Router({
 			path: "/answerQ1",
 			name: "AnswerQ1",
 			component: AnswerQ1,
+		},
+		{
+			path: "/game",
+			name: "AromaGame",
+			component: AromaGame,
 		},
 	],
 });
