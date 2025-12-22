@@ -25,7 +25,7 @@
         v-if="score < 3"
         class="fs-3 fw-bold underline"
       >
-        折價券連結：__________
+        折價券連結：<a href="https://lin.ee/Or1CxEI">優惠券連結</a>
       </p>
     </div>
 

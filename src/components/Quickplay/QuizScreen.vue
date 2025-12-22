@@ -37,7 +37,7 @@
         {{ currentQuestion.info }}
       </p>
       <button
-        class="btn btn-outline-secondary "
+        class="btn btn-outline-secondary mb-4"
         @click="nextQuestion"
       >
         下一題
