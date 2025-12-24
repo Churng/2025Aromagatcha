@@ -67,6 +67,11 @@
     >
       ⚠️ 已經玩過囉，感謝你的參與！
     </p>
+
+    <div class="">
+      <p><a href="https://lin.ee/2FB4xWu">想了解更多精油資訊嗎？歡迎加入我們的官方LINE！</a></p>
+      <p><a href="https://www.instagram.com/p/CkwtfqhPOeD/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">加入我的Instagram 不定期有精油小知識告訴大家唷</a></p>
+    </div>
   </div>
 </template>
 
