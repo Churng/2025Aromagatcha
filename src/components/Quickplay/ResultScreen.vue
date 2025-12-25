@@ -52,25 +52,59 @@
       </div>
     </div>
 
+    <p
+      v-if="alreadyPlayed"
+      class="text-gray-500 mt-2 text-sm"
+    >
+      ⚠️ 感謝你的參與！
+    </p>
+
     <!-- 再玩一次按鈕 -->
     <button
       class="btn btn-warning mt-3 mb-3"
       :disabled="alreadyPlayed"
       @click="$emit('restart')"
     >
-      再玩一次
+      ⬇️歡迎加入我的社群好友⬇️
     </button>
 
-    <p
-      v-if="alreadyPlayed"
-      class="text-gray-500 mt-2 text-sm"
-    >
-      ⚠️ 已經玩過囉，感謝你的參與！
-    </p>
 
-    <div class="">
-      <p><a href="https://lin.ee/2FB4xWu">想了解更多精油資訊嗎？歡迎加入我們的官方LINE！</a></p>
-      <p><a href="https://www.instagram.com/p/CkwtfqhPOeD/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">加入我的Instagram 不定期有精油小知識告訴大家唷</a></p>
+    <div class="social-section">
+      <div class="social-item">
+        <div class="social-img-wrap">
+          <img
+            src="../../assets/lineScan.png"
+            alt="LINE QR Code"
+            class="social-img"
+          >
+        </div>
+        <p class="social-text">
+          <a
+            href="https://lin.ee/2FB4xWu"
+            target="_blank"
+          >
+            想了解更多精油資訊嗎？歡迎加入我們的官方 LINE！
+          </a>
+        </p>
+      </div>
+
+      <div class="social-item">
+        <div class="social-img-wrap">
+          <img
+            src="../../assets/insScan.jpg"
+            alt="Instagram QR Code"
+            class="social-img"
+          >
+        </div>
+        <p class="social-text">
+          <a
+            href="https://www.instagram.com/p/CkwtfqhPOeD/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+            target="_blank"
+          >
+            加入我的 Instagram，不定期有精油小知識告訴大家唷 💧
+          </a>
+        </p>
+      </div>
     </div>
   </div>
 </template>
@@ -87,12 +121,83 @@ defineProps({
 const alreadyPlayed = ref(false)
 
 // 進入頁面時檢查 localStorage
-// onMounted(() => {
-//   const played = localStorage.getItem('aromaGamePlayed')
-//   if (played) {
-//     alreadyPlayed.value = true
-//   } else {
-//     localStorage.setItem('aromaGamePlayed', 'true')
-//   }
-// })
+onMounted(() => {
+  const played = localStorage.getItem('aromaGamePlayed')
+  if (played) {
+    alreadyPlayed.value = true
+  } else {
+    localStorage.setItem('aromaGamePlayed', 'true')
+  }
+})
 </script>
+
+<style scoped>.social-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  background: #fdfdfd;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease;
+}
+
+.social-item:hover {
+  transform: translateY(-3px);
+}
+
+.social-img-wrap {
+  flex-shrink: 0;
+  width: 160px; /* ← 圖片變大 */
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-right: 20px;
+}
+
+.social-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* 保持比例顯示完整 */
+}
+
+.social-text a {
+  color: #333;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.social-text a:hover {
+  color: #2e8b57;
+  text-decoration: underline;
+}
+
+/* 📱 響應式 - 手機改成上下排列 */
+@media (max-width: 600px) {
+  .social-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-img-wrap {
+    width: 200px;
+    height: 200px;
+    margin: 0 0 12px 0;
+  }
+
+  .social-text a {
+    font-size: 16px;
+  }
+}
+  </style>
