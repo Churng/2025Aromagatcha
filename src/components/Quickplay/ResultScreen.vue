@@ -60,13 +60,13 @@
     </p>
 
     <!-- 再玩一次按鈕 -->
-    <button
+    <!-- <button
       class="btn btn-warning mt-3 mb-3"
       :disabled="alreadyPlayed"
       @click="$emit('restart')"
     >
       ⬇️歡迎加入我的社群好友⬇️
-    </button>
+    </button> -->
 
 
     <div class="social-section">
