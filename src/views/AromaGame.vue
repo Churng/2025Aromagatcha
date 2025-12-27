@@ -30,14 +30,14 @@ import ResultScreen from "../components/Quickplay/ResultScreen.vue";
 import quizData from "../JSON/Quizdata.json";
 
 const stage = ref("start");
-const timeLeft = ref(300);
+const timeLeft = ref(180);
 const score = ref(0);
 const results = ref([]);
 const shuffledQuestions = ref([]);
 
 function startGame() {
   stage.value = "quiz";
-  timeLeft.value = 300;
+  timeLeft.value = 180;
   score.value = 0;
   results.value = [];
 
